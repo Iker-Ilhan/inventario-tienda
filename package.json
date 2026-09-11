@@ -1,0 +1,22 @@
+{
+  "name": "inventario-tienda",
+  "version": "1.0.0",
+  "description": "Sistema de inventario con MongoDB - Base de datos: proyecto",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "keywords": [
+    "inventario",
+    "mongodb",
+    "tienda",
+    "consultas"
+  ],
+  "author": "José Vladimir Díaz Nicolas & Iker Ilhan Diaz Pino",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "cors": "^2.8.5"
+  }
+}
