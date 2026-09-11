@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 // ===== CONEXIÓN A TU BASE DE DATOS "proyecto" =====
-const MONGODB_URL = 'mongodb://localhost:27017/proyecto';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/inventario';
 
 mongoose.connect(MONGODB_URL)
   .then(() => console.log('✅ ¡Conectado a MongoDB - Base de datos: proyecto!'))
