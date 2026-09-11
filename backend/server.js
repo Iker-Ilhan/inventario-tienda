@@ -1136,7 +1136,7 @@ app.get('/api/consultas/todas-colecciones', async (req, res) => {
 });
 
 // ===== INICIAR SERVIDOR =====
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`
   ╔═══════════════════════════════════════╗
